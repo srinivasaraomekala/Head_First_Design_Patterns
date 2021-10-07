@@ -5,6 +5,7 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
+	<classpathentry excluding="com/commandpattern/|com/commandpattern/" kind="src" path="src"/>
+	<classpathentry kind="src" path="/Head-First-Design-Patterns"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
