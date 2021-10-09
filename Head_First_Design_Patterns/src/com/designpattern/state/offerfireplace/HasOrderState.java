@@ -28,7 +28,7 @@ public class HasOrderState implements State {
 		fireplaceOrder.releaseFireplace();
 		int winner = randomWinner.nextInt(5);		
 		if ((winner == 0) && (fireplaceOrder.getCount() > 1)) {
-			fireplaceOrder.setState(fireplaceOrder.getOfferRate());
+			fireplaceOrder.setState(fireplaceOrder.getRewardState());
 		} else {
 			if (fireplaceOrder.getCount() == 0) {
 			fireplaceOrder.setState(fireplaceOrder.getSoldOutState());

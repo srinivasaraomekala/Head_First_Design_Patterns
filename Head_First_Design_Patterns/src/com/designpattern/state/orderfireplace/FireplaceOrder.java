@@ -7,7 +7,7 @@ public class FireplaceOrder {
 	State hasOrderState;
 	State soldState;
  
-	State state;
+	State state = soldOutState;
 	int count = 0;
  
 	public FireplaceOrder(int numberofFireplaces) {

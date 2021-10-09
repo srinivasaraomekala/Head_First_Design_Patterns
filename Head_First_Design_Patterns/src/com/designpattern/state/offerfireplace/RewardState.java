@@ -1,13 +1,10 @@
 package com.designpattern.state.offerfireplace;
 
-public class OfferRate implements State {
+public abstract class RewardState extends RewardBuilder{
 
-    FireplaceOrder fireplaceOrder;
- 
-    public OfferRate(FireplaceOrder fireplaceOrder) {
-        this.fireplaceOrder = fireplaceOrder;
-    }
- 
+	FireplaceOrder fireplaceOrder = new FireplaceOrder();
+	
+
 	public void orderFireplace() {
 		System.out.println("You have ordered a Fireplace");
 	}
@@ -46,3 +43,4 @@ public class OfferRate implements State {
 		return "Reducing 10% cost on your order, because you are a Winner";
 	}
 }
+

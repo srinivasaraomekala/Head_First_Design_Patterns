@@ -6,7 +6,7 @@ public class FireplaceOrder {
 	State noOrderState;
 	State hasOrderState;
 	State soldState;
-	State offerRate;
+	State rewardState;
  
 	State state ;
 	int count = 0;
@@ -16,7 +16,7 @@ public class FireplaceOrder {
 		noOrderState = new NoOrderState(this);
 		hasOrderState = new HasOrderState(this);
 		soldState = new SoldState(this);
-		offerRate = new OfferRate(this);
+		//rewardState = new RewardState(this);
 
 		this.count = numberofFireplaces;
  		if (numberofFireplaces > 0) {
@@ -26,6 +26,9 @@ public class FireplaceOrder {
 		}
 	}
  
+	public FireplaceOrder() {
+	}
+
 	public void orderFireplace() {
 		state.orderFireplace();
 	}
@@ -80,8 +83,8 @@ public class FireplaceOrder {
         return soldOutState;
     }
     
-    public State getOfferRate() {
-        return offerRate;
+    public State getRewardState() {
+        return rewardState;
     }
  
 	public String toString() {
